@@ -1,3 +1,4 @@
+# Archivos sensibles - no subir al repositorio
 node_modules/
 .env
 key.pem
