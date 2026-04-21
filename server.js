@@ -9,8 +9,13 @@ app.use(express.json());
 
 // Ruta principal
 app.get("/", (req, res) => {
-    res.send("Servidor base funcionando");
+    res.send("Servidor HTTPS funcionando");
+});
+//ruta de prueba 
+app.get("/test", (req, res) => {
+    res.json({ mensaje: "Ruta de prueba OK" });
 });
 
 // Exporta la app 
 module.exports = app;
+
