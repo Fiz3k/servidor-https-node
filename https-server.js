@@ -1,3 +1,5 @@
+// Certificados SSL generados con OpenSSL (key.pem y cert.pem)
+
 // Importa módulos necesarios
 const https = require("https");
 const fs = require("fs");
