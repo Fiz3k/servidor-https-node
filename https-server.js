@@ -5,7 +5,7 @@ const https = require("https");
 const fs = require("fs");
 const app = require("./server");
 
-// Configuración vacía (otro integrante completará esto)
+// Carga la clave privada y certificado SSL
 const options = {
     key: fs.readFileSync("key.pem"),
     cert: fs.readFileSync("cert.pem"),
@@ -15,3 +15,5 @@ const options = {
 https.createServer(options, app).listen(8080, () => {
     console.log("Servidor HTTPS listo en https://localhost:8080");
 });
+
+//ruta de prueba 
